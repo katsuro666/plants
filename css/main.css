@@ -197,8 +197,10 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 
 body {
-  color: rgb(34, 34, 34);
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: rgb(99, 96, 96);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
 }
 
 .clearfix::after {
@@ -208,12 +210,20 @@ body {
 }
 
 .container {
-  max-width: 1180px; /* 1 */
+  max-width: 1220px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
-  padding-left: 20px; /* 3 */
-  padding-right: 20px; /* 3 */
   width: 100%; /* 1 */
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 668px;
+  }
+}
+@media (max-width: 380px) {
+  .container {
+    max-width: 280px;
+  }
 }
 
 .visually-hidden {
