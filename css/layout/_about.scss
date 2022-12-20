@@ -1,0 +1,31 @@
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-slogan {
+  width: 605px;
+  margin: 161px 0 155px;
+}
+
+.about-slogan__heading {
+  font: 4rem / 52px $additional-font;
+  color: $brand-color;
+  width: 463px;
+
+  & span {
+    color: $brand-highlight;
+  }
+}
+
+.about-slogan__content {
+  font: 2rem / 30px $text-font;
+}
+
+
+.about-plant {
+  background-image: url('../assets/images/houseplant.png');
+  width: 464px;
+  height: 479px;
+  margin: 93px 0 94px;
+}
