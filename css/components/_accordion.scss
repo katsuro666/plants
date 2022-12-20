@@ -1,0 +1,98 @@
+.prices-rates__accordion {
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  padding: 34px 41px;
+}
+
+.accordion__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: $background;
+  width: 250px;
+  border-radius: 20px;
+  padding: 16px 40px;
+  margin-top: 32px;
+
+  &:first-child {
+  margin-top: 0;  
+  }
+}
+
+.item__name {
+  font: 700 2rem / 20px $text-font;
+  color: #000000;
+  margin: 0;
+}
+
+.item__arrow {
+  background-image: url('../assets/icons/accordion_arrow.svg');
+  width: 16px;
+  height: 16px;
+}
+
+.tariff {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 250px;
+  background-color: $background-active;
+  padding: 16px 40px 12px;
+  border-radius: 20px;
+}
+
+.tariff--active {
+  display: block;
+}
+
+.tariff__name {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & p {
+    font: 700 2rem / 20px $text-font;
+    color: #000000;
+    margin: 0;
+  }
+}
+
+.tariff__arrow {
+  background-image: url('../assets/icons/accordion_arrow--active.svg');
+  width: 16px;
+  height: 16px;
+}
+
+.tariff__line {
+  background-image: url('../assets/icons/tariff_line.svg');
+  width: 164px;
+  height: 1px;
+  margin: 12px auto 6px;
+}
+
+.tariff__desc {
+  margin: 0;
+  font: 300 1rem / 10px $text-font;
+}
+
+.tariff__price {
+  font: 1.2rem / 20px $text-font;
+  color: #000000;
+  margin: 6px auto 12px;
+
+  & span {
+    color: $brand-highlight;
+    font-weight: 700;
+  }
+}
+
+.price__amount {
+  font-size: 16px;
+}
+
+.price__currency {
+  font-size: 12px;
+}

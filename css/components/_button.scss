@@ -29,3 +29,21 @@
     color: #ffffff;
   }
 }
+
+.prices-slogan__button {
+  width: 162px;
+  height: 50px;
+  color: $brand-highlight;
+  font: 700 2rem / 26px $additional-font;
+}
+
+.tariff__order {
+  border: none;
+  width: 86px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  font: 700 1.4rem / 20px $text-font;
+  color: $text-light;
+  // font-weight: 700;
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Plants</title>
@@ -181,22 +181,22 @@
 
       <section class="prices">
         <a id="prices"></a>
-        <div class="container">
+        <div class="prices-container container">
           <div class="prices-rates">
             <h2 class="prices-rates__heading">Prices</h2>
 
             <div class="prices-rates__accordion">
               <div class="accordion__item">
-                <p>Basics</p>
-                <span></span>
+                <p class="item__name">Basics</p>
+                <span class="item__arrow"></span>
 
                 <div class="tariff">
                   <div class="tariff__name">
-                    <p>
-                      Basics
-                      <span></span>
-                    </p>
+                    <p>Basics</p>
+                    <span class="tariff__arrow"></span>
                   </div>
+
+                  <div class="tariff__line"></div>
 
                   <p class="tariff__desc">
                     Release of Letraset sheets containing Lorem Ipsum passages,
@@ -204,7 +204,8 @@
                   </p>
 
                   <p class="tariff__price">
-                    <span>125</span>
+                    <span class="price__currency">$</span>
+                    <span class="price__amount">15</span>
                     / per hour
                   </p>
 
@@ -213,16 +214,16 @@
               </div>
 
               <div class="accordion__item">
-                <p>Standard</p>
-                <span></span>
+                <p class="item__name">Standard</p>
+                <span class="item__arrow"></span>
 
                 <div class="tariff">
                   <div class="tariff__name">
-                    <p>
-                      Standard
-                      <span></span>
-                    </p>
+                    <p>Standard</p>
+                    <span class="tariff__arrow"></span>
                   </div>
+
+                  <div class="tariff__line"></div>
 
                   <p class="tariff__desc">
                     Release of Letraset sheets containing Lorem Ipsum passages,
@@ -230,7 +231,8 @@
                   </p>
 
                   <p class="tariff__price">
-                    <span>$25</span>
+                    <span class="price__currency">$</span>
+                    <span class="price__amount">25</span>
                     / per hour
                   </p>
 
@@ -239,16 +241,16 @@
               </div>
 
               <div class="accordion__item">
-                <p>Pro care</p>
-                <span></span>
+                <p class="item__name">Pro care</p>
+                <span class="item__arrow"></span>
 
                 <div class="tariff">
                   <div class="tariff__name">
-                    <p>
-                      Pro care
-                      <span></span>
-                    </p>
+                    <p>Pro care</p>
+                    <span class="tariff__arrow"></span>
                   </div>
+
+                  <div class="tariff__line"></div>
 
                   <p class="tariff__desc">
                     Release of Letraset sheets containing Lorem Ipsum passages,
@@ -256,7 +258,8 @@
                   </p>
 
                   <p class="tariff__price">
-                    <span>$35</span>
+                    <span class="price__currency">$</span>
+                    <span class="price__amount">35</span>
                     / per hour
                   </p>
 
@@ -273,7 +276,7 @@
               are ready to help you
             </h3>
 
-            <button class="button prices-slogan__button"></button>
+            <button class="button prices-slogan__button">Contact us</button>
 
             <div class="prices-leafs"></div>
           </div>

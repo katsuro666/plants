@@ -1,0 +1,38 @@
+.prices-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-rates {
+  margin: 40px 0 129px;
+}
+
+.prices-rates__heading {
+  font: 700 4rem / 48px $text-font;
+  color: #000000;
+  margin: 0 0 60px;
+}
+
+.prices-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.prices-slogan__heading {
+  font: 700 4rem / 50px $text-font;
+  color: #000000;
+  text-align: right;
+  width: 452px;
+
+  & span {
+    color: $brand-color;
+  }
+}
+
+.prices-leafs {
+  background-image: url('../assets/images/prices-leafs.png');
+  width: 152px;
+  height: 175px;
+  margin: 39px 0 115px;
+}

@@ -21,9 +21,11 @@
   'layout/welcome',
   'layout/about',
   'layout/service',
+  'layout/prices',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
-  'components/cards';
+  'components/cards',
+  'components/accordion';
