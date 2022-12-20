@@ -1,0 +1,33 @@
+.welcome {
+  background-color: $background;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome-leafs {
+  background-image: url('../assets/images/welcome-leafs.png');
+  width: 449px;
+  height: 407px;
+  margin: 62px 0;
+}
+
+.welcome-slogan {
+  width: 549px;
+  margin: 92px 0 94px;
+}
+
+.welcome-slogan__heading {
+  font: 700 4.5rem / 50px $text-font;
+  color: $text-light;
+
+  & span {
+    color: $brand-color;
+  }
+}
+
+.welcome-slogan__content {
+  font: 2rem / 35px $text-font;
+}

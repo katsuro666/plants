@@ -15,10 +15,7 @@
 }
 
 .nav__item {
-  font-family: $additional-font;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 50px;
+  font: 400 1.6rem / 50px $additional-font;
   color: $text-dark;
   margin-left: 46px;
 
