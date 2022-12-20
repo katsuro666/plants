@@ -1,0 +1,32 @@
+.service {
+ background-color: $background;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 40px 0 90px;
+}
+
+.service__heading {
+  font: 4rem / 52px $additional-font;
+  margin: 0;
+  color: $brand-color;
+  width: 306px;
+  margin-right: 142px;
+}
+
+.service__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 115px;
+  row-gap: 55px;
+  margin-bottom: 121px;
+}

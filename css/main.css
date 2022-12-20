@@ -327,6 +327,40 @@ html {
   margin: 93px 0 94px;
 }
 
+.service {
+  background-color: rgb(237, 242, 236);
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 40px 0 90px;
+}
+
+.service__heading {
+  font: 4rem/52px "Inika", serif;
+  margin: 0;
+  color: rgb(73, 154, 24);
+  width: 306px;
+  margin-right: 142px;
+}
+
+.service__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 115px;
+       column-gap: 115px;
+  row-gap: 55px;
+  margin-bottom: 121px;
+}
+
 .button {
   border: 1px solid #E06733;
   border-radius: 5px;
@@ -343,4 +377,45 @@ html {
   height: 44px;
   font: 1.6rem/20px "Inter", sans-serif;
   text-transform: uppercase;
+}
+
+.service__button {
+  width: 161px;
+  height: 50px;
+  color: rgb(224, 103, 51);
+  font: 2rem/26px "Inika", serif;
+  margin: 30px 38px 15px 0;
+}
+.service__button--active {
+  background-color: rgb(224, 103, 51);
+  color: #ffffff;
+}
+
+.card-item {
+  width: 330px;
+}
+.card-item__img {
+  border-radius: 20px 20px 0px 0px;
+}
+.card-item__heading {
+  color: rgb(224, 103, 51);
+  font: 700 2rem/20px "Inter", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+.card-item__desc {
+  font: 1.6rem/20px "Inter", sans-serif;
+  text-align: center;
+  margin: 10px auto 36px;
+}
+.card-item__plate {
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.card-item--inactive {
+  filter: blur(2px);
 }/*# sourceMappingURL=main.css.map */

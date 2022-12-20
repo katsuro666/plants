@@ -16,3 +16,16 @@
   font: 1.6rem / 20px $text-font;
   text-transform: uppercase;
 }
+
+.service__button {
+  width: 161px;
+  height: 50px;
+  color: $brand-highlight;
+  font: 2rem / 26px $additional-font;
+  margin: 30px 38px 15px 0;
+
+  &--active {
+    background-color: $brand-highlight;
+    color: #ffffff;
+  }
+}
