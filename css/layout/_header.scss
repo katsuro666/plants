@@ -1,0 +1,33 @@
+.header {
+  background-color: $background;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 134px;
+}
+
+.header__nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item {
+  font-family: $additional-font;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 50px;
+  color: $text-dark;
+  margin-left: 46px;
+
+  &:hover {
+    color: $brand-highlight;
+    font-weight: 700;
+  }
+}
+
+.header__burger {
+  display: none;
+}
