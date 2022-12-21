@@ -1,0 +1,26 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  color: #000000;
+  font: 2rem / 50px $text-font;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.footer__copyright {
+  margin-right: 20px;
+}
+
+.footer__socials {
+  list-style: none;
+  display: flex;
+  margin: 0;
+
+  & li {
+    margin-left: 20px;
+  }
+}

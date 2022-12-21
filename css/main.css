@@ -191,6 +191,12 @@ html {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+a:hover, a:active, a:focus, a:focus-within {
+  color: rgb(224, 103, 51);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 html {
@@ -419,6 +425,7 @@ html {
 .contacts__heading {
   font: 700 4rem/52px "Inika", serif;
   color: rgb(73, 154, 24);
+  margin-top: 60px;
 }
 
 .city-card {
@@ -451,6 +458,31 @@ html {
 
 .city-card--active {
   display: flex;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  color: #000000;
+  font: 2rem/50px "Inter", sans-serif;
+}
+.footer-container p {
+  margin: 0;
+}
+
+.footer__copyright {
+  margin-right: 20px;
+}
+
+.footer__socials {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.footer__socials li {
+  margin-left: 20px;
 }
 
 .button {
