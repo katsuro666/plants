@@ -181,6 +181,7 @@ template {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -496,11 +497,22 @@ html {
 
 .welcome-slogan__button {
   border: 2px solid #E06733;
+  color: #000000;
   border-radius: 10px;
   width: 158px;
   height: 44px;
   font: 1.6rem/20px "Inter", sans-serif;
   text-transform: uppercase;
+}
+.welcome-slogan__button:hover {
+  background-color: rgb(224, 103, 51);
+  color: #ffffff;
+  font-weight: 700;
+}
+.welcome-slogan__button:active {
+  background-color: transparent;
+  color: rgb(224, 103, 51);
+  font-weight: 400;
 }
 
 .service__button {
@@ -509,6 +521,10 @@ html {
   color: rgb(224, 103, 51);
   font: 2rem/26px "Inika", serif;
   margin: 30px 38px 15px 0;
+}
+.service__button:active {
+  background-color: rgb(224, 103, 51);
+  color: #ffffff;
 }
 .service__button--active {
   background-color: rgb(224, 103, 51);
@@ -521,8 +537,12 @@ html {
   color: rgb(224, 103, 51);
   font: 700 2rem/26px "Inika", serif;
 }
+.prices-slogan__button:active {
+  background-color: rgb(224, 103, 51);
+  color: #ffffff;
+}
 
-.tariff__order {
+.tariff__order-button {
   border: none;
   width: 86px;
   height: 25px;
@@ -645,6 +665,7 @@ html {
 .tariff__desc {
   margin: 0;
   font: 300 1rem/10px "Inter", sans-serif;
+  color: rgb(113, 113, 113);
 }
 
 .tariff__price {
@@ -677,6 +698,7 @@ html {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 50px;
   margin-top: 148px;
+  letter-spacing: 0.05em;
 }
 
 .select--active {
@@ -685,6 +707,7 @@ html {
 
 .select__current {
   font: 2rem/40px "Inter", sans-serif;
+  color: rgb(113, 113, 113);
 }
 
 .select__arrow {
@@ -738,8 +761,8 @@ html {
 
 .select__item:hover {
   cursor: pointer;
-  color: rgb(99, 96, 96);
+  color: rgb(113, 113, 113);
 }
 .select__item:hover::after {
-  background-color: rgb(99, 96, 96);
+  background-color: rgb(113, 113, 113);
 }/*# sourceMappingURL=main.css.map */

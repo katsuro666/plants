@@ -10,11 +10,24 @@
 
 .welcome-slogan__button {
   border: 2px solid #E06733;
+  color: #000000;
   border-radius: 10px;
   width: 158px;
   height: 44px;
   font: 1.6rem / 20px $text-font;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $brand-highlight;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &:active {
+    background-color: transparent;
+    color: $brand-highlight;
+    font-weight: 400;
+  }
 }
 
 .service__button {
@@ -23,6 +36,11 @@
   color: $brand-highlight;
   font: 2rem / 26px $additional-font;
   margin: 30px 38px 15px 0;
+
+  &:active {
+    background-color: $brand-highlight;
+    color: #ffffff;
+  }
 
   &--active {
     background-color: $brand-highlight;
@@ -35,9 +53,14 @@
   height: 50px;
   color: $brand-highlight;
   font: 700 2rem / 26px $additional-font;
+
+  &:active {
+    background-color: $brand-highlight;
+    color: #ffffff;
+  }
 }
 
-.tariff__order {
+.tariff__order-button {
   border: none;
   width: 86px;
   height: 25px;
