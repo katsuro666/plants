@@ -20,7 +20,6 @@
   &:hover {
     background-color: $brand-highlight;
     color: #ffffff;
-    font-weight: 700;
   }
 
   &:active {
@@ -54,9 +53,15 @@
   color: $brand-highlight;
   font: 700 2rem / 26px $additional-font;
 
-  &:active {
+  &:hover {
     background-color: $brand-highlight;
     color: #ffffff;
+  }
+
+  &:active {
+    background-color: transparent;
+    color: $brand-highlight;
+    font-weight: 400;
   }
 }
 

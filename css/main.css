@@ -507,7 +507,6 @@ html {
 .welcome-slogan__button:hover {
   background-color: rgb(224, 103, 51);
   color: #ffffff;
-  font-weight: 700;
 }
 .welcome-slogan__button:active {
   background-color: transparent;
@@ -537,9 +536,14 @@ html {
   color: rgb(224, 103, 51);
   font: 700 2rem/26px "Inika", serif;
 }
-.prices-slogan__button:active {
+.prices-slogan__button:hover {
   background-color: rgb(224, 103, 51);
   color: #ffffff;
+}
+.prices-slogan__button:active {
+  background-color: transparent;
+  color: rgb(224, 103, 51);
+  font-weight: 400;
 }
 
 .tariff__order-button {
