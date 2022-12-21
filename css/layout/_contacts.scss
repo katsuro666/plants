@@ -1,0 +1,54 @@
+.contacts {
+  background-color: $background;
+}
+
+.contacts-container {
+  position: relative;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.contacts__women {
+  background-image: url('../assets/images/contact-woman.png');
+  width: 400px;
+  height: 497px;
+  margin-top: 53px;
+}
+
+.contacts__heading {
+  font: 700 4rem / 52px $additional-font;
+  color: $brand-color;
+}
+
+.city-card {
+  display: none;
+  position: absolute;
+  top: 245px;
+  right: 0;
+  flex-direction: column;
+  width: 448px;
+  padding: 17px 35px 32px;
+  background-color: $background;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+.city-card__container {
+  display: flex;
+  font: 1.6rem / 40px $text-font;
+
+}
+
+.city-card__heading {
+  color: #000000;
+  width: 128px;
+}
+
+.city-card__content {
+  color: $text-light;
+  letter-spacing: 0.05em;
+}
+
+.city-card--active {
+  display: flex;
+}

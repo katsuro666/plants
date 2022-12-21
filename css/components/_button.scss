@@ -45,5 +45,12 @@
   border-radius: 10px;
   font: 700 1.4rem / 20px $text-font;
   color: $text-light;
-  // font-weight: 700;
+}
+
+.city-card__button {
+  width: 122px;
+  height: 26px;
+  font: 700 1rem / 13px $additional-font;
+  color: $text-light;
+  align-self: center;
 }

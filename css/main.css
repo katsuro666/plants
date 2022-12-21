@@ -399,6 +399,60 @@ html {
   margin: 39px 0 115px;
 }
 
+.contacts {
+  background-color: rgb(237, 242, 236);
+}
+
+.contacts-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__women {
+  background-image: url("../assets/images/contact-woman.png");
+  width: 400px;
+  height: 497px;
+  margin-top: 53px;
+}
+
+.contacts__heading {
+  font: 700 4rem/52px "Inika", serif;
+  color: rgb(73, 154, 24);
+}
+
+.city-card {
+  display: none;
+  position: absolute;
+  top: 245px;
+  right: 0;
+  flex-direction: column;
+  width: 448px;
+  padding: 17px 35px 32px;
+  background-color: rgb(237, 242, 236);
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+.city-card__container {
+  display: flex;
+  font: 1.6rem/40px "Inter", sans-serif;
+}
+
+.city-card__heading {
+  color: #000000;
+  width: 128px;
+}
+
+.city-card__content {
+  color: rgb(113, 113, 113);
+  letter-spacing: 0.05em;
+}
+
+.city-card--active {
+  display: flex;
+}
+
 .button {
   border: 1px solid #E06733;
   border-radius: 5px;
@@ -444,6 +498,14 @@ html {
   border-radius: 10px;
   font: 700 1.4rem/20px "Inter", sans-serif;
   color: rgb(113, 113, 113);
+}
+
+.city-card__button {
+  width: 122px;
+  height: 26px;
+  font: 700 1rem/13px "Inika", serif;
+  color: rgb(113, 113, 113);
+  align-self: center;
 }
 
 .card-item {
@@ -569,4 +631,83 @@ html {
 
 .price__currency {
   font-size: 12px;
+}
+
+.contacts__select {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 35px;
+  width: 450px;
+  background-color: rgb(214, 231, 210);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  margin-top: 148px;
+}
+
+.select--active {
+  background-color: rgb(193, 230, 152);
+}
+
+.select__current {
+  font: 2rem/40px "Inter", sans-serif;
+}
+
+.select__arrow {
+  background-image: url("../assets/icons/select_arrow.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.select__arrow--active {
+  background-image: url("../assets/icons/select_arrow--active.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.select__dropdown {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 0;
+  background-color: rgb(214, 231, 210);
+  width: 450px;
+  padding: 27px 35px 31px;
+}
+
+.select__dropdown--active {
+  display: block;
+}
+
+.select__item {
+  position: relative;
+  display: block;
+  font: 1.6rem/40px "Inter", sans-serif;
+  color: rgb(73, 154, 24);
+  margin: 12px auto 0;
+  height: 35px;
+  letter-spacing: 0.05em;
+}
+.select__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 380px;
+  height: 1px;
+  background-color: rgb(217, 217, 217);
+}
+.select__item:first-child {
+  margin-top: 0;
+}
+
+.select__item:hover {
+  cursor: pointer;
+  color: rgb(99, 96, 96);
+}
+.select__item:hover::after {
+  background-color: rgb(99, 96, 96);
 }/*# sourceMappingURL=main.css.map */

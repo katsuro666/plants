@@ -1,0 +1,82 @@
+.contacts__select {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 35px;
+  width: 450px;
+  background-color: $background-active;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  margin-top: 148px;
+}
+
+.select--active {
+  background-color: $selected;
+}
+
+.select__current {
+  font: 2rem / 40px $text-font;
+}
+
+.select__arrow {
+  background-image: url('../assets/icons/select_arrow.svg');
+  width: 16px;
+  height: 16px;
+}
+
+.select__arrow--active {
+  background-image: url('../assets/icons/select_arrow--active.svg');
+  width: 16px;
+  height: 16px;
+}
+
+.select__dropdown {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 0;
+  background-color: $background-active;
+  width: 450px;
+  padding: 27px 35px 31px;
+}
+
+.select__dropdown--active {
+  display: block;
+}
+
+.select__item {
+  position: relative;
+  display: block;
+  font: 1.6rem / 40px $text-font;
+  color: $brand-color;
+  margin: 12px auto 0;
+  height: 35px;
+  letter-spacing: 0.05em;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 380px;
+    height: 1px;
+    background-color: rgba(217, 217, 217, 1);
+     
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.select__item:hover {
+  cursor: pointer;
+  color: $text-color;
+
+  &::after {
+    background-color: $text-color;
+  }
+}
