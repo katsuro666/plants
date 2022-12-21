@@ -9,6 +9,11 @@
   height: 134px;
 }
 
+.header__logo {
+  margin-bottom: 8px;
+  margin-left: 2px;
+}
+
 .header__nav ul {
   display: flex;
   list-style: none;
@@ -17,7 +22,7 @@
 .nav__item {
   font: 400 1.6rem / 50px $additional-font;
   color: $text-dark;
-  margin-left: 46px;
+  margin-left: 47px;
 
   &:hover {
     color: $brand-highlight;

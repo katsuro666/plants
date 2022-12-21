@@ -214,7 +214,7 @@ html {
 }
 
 .container {
-  max-width: 1220px; /* 1 */
+  max-width: 1222px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
   width: 100%; /* 1 */
@@ -252,6 +252,11 @@ html {
   height: 134px;
 }
 
+.header__logo {
+  margin-bottom: 8px;
+  margin-left: 2px;
+}
+
 .header__nav ul {
   display: flex;
   list-style: none;
@@ -260,7 +265,7 @@ html {
 .nav__item {
   font: 400 1.6rem/50px "Inika", serif;
   color: rgb(1, 2, 1);
-  margin-left: 46px;
+  margin-left: 47px;
 }
 .nav__item:hover {
   color: rgb(224, 103, 51);
@@ -284,7 +289,7 @@ html {
   background-image: url("../assets/images/welcome-leafs.png");
   width: 449px;
   height: 407px;
-  margin: 62px 0;
+  margin: 54px auto 55px -8px;
 }
 
 .welcome-slogan {
@@ -295,6 +300,7 @@ html {
 .welcome-slogan__heading {
   font: 700 4.5rem/50px "Inter", sans-serif;
   color: rgb(113, 113, 113);
+  margin: 0;
 }
 .welcome-slogan__heading span {
   color: rgb(73, 154, 24);
@@ -302,6 +308,7 @@ html {
 
 .welcome-slogan__content {
   font: 2rem/35px "Inter", sans-serif;
+  margin: 48px 0;
 }
 
 .about-container {
@@ -318,6 +325,8 @@ html {
   font: 4rem/52px "Inika", serif;
   color: rgb(73, 154, 24);
   width: 463px;
+  margin-top: 0;
+  margin-bottom: 38px;
 }
 .about-slogan__heading span {
   color: rgb(224, 103, 51);
@@ -325,6 +334,7 @@ html {
 
 .about-slogan__content {
   font: 2rem/30px "Inter", sans-serif;
+  margin: 0;
 }
 
 .about-plant {
@@ -347,7 +357,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 40px 0 90px;
+  margin: 38px 0 80px;
 }
 
 .service__heading {
@@ -374,7 +384,7 @@ html {
 }
 
 .prices-rates {
-  margin: 40px 0 129px;
+  margin: 36px 0 129px;
 }
 
 .prices-rates__heading {
@@ -394,6 +404,7 @@ html {
   color: #000000;
   text-align: right;
   width: 452px;
+  margin-top: 36px;
 }
 .prices-slogan__heading span {
   color: rgb(73, 154, 24);
@@ -420,13 +431,14 @@ html {
   background-image: url("../assets/images/contact-woman.png");
   width: 400px;
   height: 497px;
-  margin-top: 53px;
+  margin-top: 49px;
 }
 
 .contacts__heading {
   font: 700 4rem/52px "Inika", serif;
   color: rgb(73, 154, 24);
-  margin-top: 60px;
+  margin-top: 56px;
+  margin-left: 46px;
 }
 
 .city-card {
@@ -473,8 +485,12 @@ html {
   margin: 0;
 }
 
-.footer__copyright {
-  margin-right: 20px;
+.footer__copyright span {
+  margin-right: 15px;
+}
+
+.footer__school {
+  padding-left: 83px;
 }
 
 .footer__socials {
@@ -483,7 +499,8 @@ html {
   margin: 0;
 }
 .footer__socials li {
-  margin-left: 20px;
+  margin-left: 28px;
+  margin-top: 5px;
 }
 
 .button {
@@ -519,7 +536,7 @@ html {
   height: 50px;
   color: rgb(224, 103, 51);
   font: 2rem/26px "Inika", serif;
-  margin: 30px 38px 15px 0;
+  margin: 20px 35px 15px 0;
 }
 .service__button:active {
   background-color: rgb(224, 103, 51);
@@ -575,12 +592,12 @@ html {
   font: 700 2rem/20px "Inter", sans-serif;
   text-align: center;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 .card-item__desc {
   font: 1.6rem/20px "Inter", sans-serif;
   text-align: center;
-  margin: 10px auto 36px;
+  margin: 14px auto 36px;
 }
 .card-item__plate {
   border-width: 0 1px 1px 1px;
@@ -607,7 +624,7 @@ html {
   width: 250px;
   border-radius: 20px;
   padding: 16px 40px;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 .accordion__item:first-child {
   margin-top: 0;
@@ -696,12 +713,12 @@ html {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 0 35px;
+  padding: 0 35px 0 0;
   width: 450px;
   background-color: rgb(214, 231, 210);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 50px;
-  margin-top: 148px;
+  margin-top: 144px;
   letter-spacing: 0.05em;
 }
 
@@ -712,6 +729,7 @@ html {
 .select__current {
   font: 2rem/40px "Inter", sans-serif;
   color: rgb(113, 113, 113);
+  margin-left: 20px;
 }
 
 .select__arrow {

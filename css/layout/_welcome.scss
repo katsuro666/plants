@@ -11,7 +11,7 @@
   background-image: url('../assets/images/welcome-leafs.png');
   width: 449px;
   height: 407px;
-  margin: 62px 0;
+  margin: 54px auto 55px -8px;
 }
 
 .welcome-slogan {
@@ -22,6 +22,7 @@
 .welcome-slogan__heading {
   font: 700 4.5rem / 50px $text-font;
   color: $text-light;
+  margin: 0;
 
   & span {
     color: $brand-color;
@@ -30,4 +31,5 @@
 
 .welcome-slogan__content {
   font: 2rem / 35px $text-font;
+  margin: 48px 0;
 }

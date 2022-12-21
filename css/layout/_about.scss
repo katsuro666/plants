@@ -12,6 +12,8 @@
   font: 4rem / 52px $additional-font;
   color: $brand-color;
   width: 463px;
+  margin-top: 0;
+  margin-bottom: 38px;
 
   & span {
     color: $brand-highlight;
@@ -20,6 +22,8 @@
 
 .about-slogan__content {
   font: 2rem / 30px $text-font;
+  margin: 0;
+
 }
 
 

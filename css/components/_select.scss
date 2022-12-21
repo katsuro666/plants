@@ -4,12 +4,12 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 0 35px;
+  padding: 0 35px 0 0;
   width: 450px;
   background-color: $background-active;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 50px;
-  margin-top: 148px;
+  margin-top: 144px;
   letter-spacing: 0.05em;
 
 }
@@ -21,6 +21,7 @@
 .select__current {
   font: 2rem / 40px $text-font;
   color: $text-light;
+  margin-left: 20px;
 }
 
 .select__arrow {
