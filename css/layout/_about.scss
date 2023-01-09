@@ -1,11 +1,20 @@
 .about-container {
   display: flex;
   justify-content: space-between;
+
+  @include media-tablet {
+    flex-direction: column;
+  }
 }
 
 .about-slogan {
   width: 605px;
   margin: 161px 0 155px;
+
+  @include media-tablet {
+    width: 100%;
+    margin: 40px 0;
+  }
 }
 
 .about-slogan__heading {
@@ -18,12 +27,18 @@
   & span {
     color: $brand-highlight;
   }
+
+  @include media-tablet {
+    font: 3.5rem / 45px $additional-font;
+    width: 423px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
 }
 
 .about-slogan__content {
   font: 2rem / 30px $text-font;
   margin: 0;
-
 }
 
 
@@ -32,4 +47,11 @@
   width: 464px;
   height: 479px;
   margin: 93px 0 94px;
+
+  @include media-tablet {
+    width: 250px;
+    height: 258px;
+    background-size: contain;
+    margin: 0 auto 95px;
+  }
 }

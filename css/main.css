@@ -347,10 +347,21 @@ html {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
 
 .about-slogan {
   width: 605px;
   margin: 161px 0 155px;
+}
+@media (max-width: 768px) {
+  .about-slogan {
+    width: 100%;
+    margin: 40px 0;
+  }
 }
 
 .about-slogan__heading {
@@ -363,6 +374,14 @@ html {
 .about-slogan__heading span {
   color: rgb(224, 103, 51);
 }
+@media (max-width: 768px) {
+  .about-slogan__heading {
+    font: 3.5rem/45px "Inika", serif;
+    width: 423px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+}
 
 .about-slogan__content {
   font: 2rem/30px "Inter", sans-serif;
@@ -374,6 +393,14 @@ html {
   width: 464px;
   height: 479px;
   margin: 93px 0 94px;
+}
+@media (max-width: 768px) {
+  .about-plant {
+    width: 250px;
+    height: 258px;
+    background-size: contain;
+    margin: 0 auto 95px;
+  }
 }
 
 .service {
