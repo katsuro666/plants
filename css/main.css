@@ -251,6 +251,11 @@ html {
   align-items: center;
   height: 134px;
 }
+@media (max-width: 768px) {
+  .header-container {
+    height: 117px;
+  }
+}
 
 .header__logo {
   margin-bottom: 8px;
@@ -291,10 +296,26 @@ html {
   height: 407px;
   margin: 54px auto 55px -8px;
 }
+@media (max-width: 768px) {
+  .welcome-leafs {
+    order: 1;
+    width: 280px;
+    height: 254px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 40px 0 126px auto;
+  }
+}
 
 .welcome-slogan {
   width: 549px;
   margin: 92px 0 94px;
+}
+@media (max-width: 768px) {
+  .welcome-slogan {
+    width: 346px;
+    margin: 40px auto 70px 0;
+  }
 }
 
 .welcome-slogan__heading {
@@ -305,10 +326,21 @@ html {
 .welcome-slogan__heading span {
   color: rgb(73, 154, 24);
 }
+@media (max-width: 768px) {
+  .welcome-slogan__heading {
+    font-size: 3.5rem;
+  }
+}
 
 .welcome-slogan__content {
   font: 2rem/35px "Inter", sans-serif;
   margin: 48px 0;
+}
+@media (max-width: 768px) {
+  .welcome-slogan__content {
+    font: 1.6rem/25px "Inter", sans-serif;
+    margin: 30px 0;
+  }
 }
 
 .about-container {

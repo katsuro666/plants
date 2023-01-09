@@ -7,6 +7,10 @@
   justify-content: space-between;
   align-items: center;
   height: 134px;
+
+  @include media-tablet {
+    height: 117px;
+  }
 }
 
 .header__logo {

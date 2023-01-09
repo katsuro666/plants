@@ -12,11 +12,25 @@
   width: 449px;
   height: 407px;
   margin: 54px auto 55px -8px;
+
+  @include media-tablet {
+    order: 1;
+    width: 280px;
+    height: 254px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 40px 0 126px auto;
+  }
 }
 
 .welcome-slogan {
   width: 549px;
   margin: 92px 0 94px;
+
+  @include media-tablet {
+    width: 346px;
+    margin: 40px auto 70px 0;
+  }
 }
 
 .welcome-slogan__heading {
@@ -27,9 +41,18 @@
   & span {
     color: $brand-color;
   }
+
+  @include media-tablet {
+    font-size: 3.5rem;
+  }
 }
 
 .welcome-slogan__content {
   font: 2rem / 35px $text-font;
   margin: 48px 0;
+
+  @include media-tablet {
+    font: 1.6rem / 25px $text-font;
+    margin: 30px 0;
+  }
 }
