@@ -325,6 +325,11 @@ html {
     margin: 40px 0 126px auto;
   }
 }
+@media (max-width: 768px) {
+  .welcome-leafs {
+    display: none;
+  }
+}
 
 .welcome-slogan {
   width: 549px;
@@ -334,6 +339,12 @@ html {
   .welcome-slogan {
     width: 346px;
     margin: 40px auto 70px 0;
+  }
+}
+@media (max-width: 768px) {
+  .welcome-slogan {
+    margin: 24px auto;
+    width: 100%;
   }
 }
 
@@ -350,6 +361,11 @@ html {
     font-size: 3.5rem;
   }
 }
+@media (max-width: 768px) {
+  .welcome-slogan__heading {
+    font: 700 2.5rem/35px "Inter", sans-serif;
+  }
+}
 
 .welcome-slogan__content {
   font: 2rem/35px "Inter", sans-serif;
@@ -360,6 +376,11 @@ html {
     font: 1.6rem/25px "Inter", sans-serif;
     margin: 30px 0 35px;
     padding-left: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .welcome-slogan__content {
+    margin: 20px 0;
   }
 }
 
@@ -710,6 +731,13 @@ html {
   background-color: transparent;
   color: rgb(224, 103, 51);
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .welcome-slogan__button {
+    font-size: 1rem;
+    width: 100px;
+    height: 34px;
+  }
 }
 
 .service__button {
