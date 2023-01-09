@@ -12,13 +12,14 @@
 
   @include media-tablet  {
     flex-direction: column;
-    padding: 33px 0;
+    padding: 20px 0;
+    font: 2rem / 24px $text-font;
   }
 }
 
 .footer__copyright {
   @include media-tablet {
-    margin: 0 auto;
+    margin: 10px auto 20px auto;
   }
 }
 
@@ -26,7 +27,7 @@
   margin-right: 15px;
 
   @include media-tablet {
-    margin-right: 20px;
+    margin-right: 18px;
   }
 }
 
@@ -35,6 +36,7 @@
 
   @include media-tablet {
     padding: 0;
+    margin: 20px auto;
   }
 }
 
@@ -49,7 +51,9 @@
     margin-top: 5px;
 
     @include media-tablet {
-      margin-left: 20px;
+      margin-left: 27px;
+      margin-top: 25px;
+
 
       &:first-child {
         margin-left: 0;

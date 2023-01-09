@@ -14,7 +14,8 @@
 
   @include media-tablet {
     font: 700 3.5rem / 42px $text-font;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin: 0 auto 55px 15px;
   }
 }
 
@@ -38,7 +39,7 @@
   @include media-tablet {
     font: 700 2.5rem / 35px $text-font;
     width: 296px;
-    margin: 139px 0 22px;
+    margin: 135px 0 29px;
   }
 }
 

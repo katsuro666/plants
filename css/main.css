@@ -339,7 +339,8 @@ html {
 @media (max-width: 768px) {
   .welcome-slogan__content {
     font: 1.6rem/25px "Inter", sans-serif;
-    margin: 30px 0;
+    margin: 30px 0 35px;
+    padding-left: 5px;
   }
 }
 
@@ -378,7 +379,7 @@ html {
   .about-slogan__heading {
     font: 3.5rem/45px "Inika", serif;
     width: 423px;
-    margin: 0 auto 40px;
+    margin: 0 auto 52px;
     text-align: center;
   }
 }
@@ -399,7 +400,7 @@ html {
     width: 250px;
     height: 258px;
     background-size: contain;
-    margin: 0 auto 95px;
+    margin: 28px auto 95px;
   }
 }
 
@@ -472,7 +473,7 @@ html {
 @media (max-width: 768px) {
   .prices-rates__heading {
     font: 700 3.5rem/42px "Inter", sans-serif;
-    margin-bottom: 50px;
+    margin: 0 auto 55px 15px;
   }
 }
 
@@ -496,7 +497,7 @@ html {
   .prices-slogan__heading {
     font: 700 2.5rem/35px "Inter", sans-serif;
     width: 296px;
-    margin: 139px 0 22px;
+    margin: 135px 0 29px;
   }
 }
 
@@ -602,13 +603,14 @@ html {
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
-    padding: 33px 0;
+    padding: 20px 0;
+    font: 2rem/24px "Inter", sans-serif;
   }
 }
 
 @media (max-width: 768px) {
   .footer__copyright {
-    margin: 0 auto;
+    margin: 10px auto 20px auto;
   }
 }
 
@@ -617,7 +619,7 @@ html {
 }
 @media (max-width: 768px) {
   .footer__copyright span {
-    margin-right: 20px;
+    margin-right: 18px;
   }
 }
 
@@ -627,6 +629,7 @@ html {
 @media (max-width: 768px) {
   .footer__school {
     padding: 0;
+    margin: 20px auto;
   }
 }
 
@@ -641,7 +644,8 @@ html {
 }
 @media (max-width: 768px) {
   .footer__socials li {
-    margin-left: 20px;
+    margin-left: 27px;
+    margin-top: 25px;
   }
   .footer__socials li:first-child {
     margin-left: 0;
@@ -698,7 +702,7 @@ html {
 }
 @media (max-width: 768px) {
   .service__button {
-    margin: 40px 38px 0 0;
+    margin: 44px 35px 0 0;
   }
 }
 
@@ -745,6 +749,7 @@ html {
 @media (max-width: 768px) {
   .card-item__img {
     width: 280px;
+    height: 350px;
   }
 }
 .card-item__heading {
@@ -758,6 +763,12 @@ html {
   font: 1.6rem/20px "Inter", sans-serif;
   text-align: center;
   margin: 14px auto 36px;
+}
+@media (max-width: 768px) {
+  .card-item__desc {
+    width: 201px;
+    margin: 10px auto 20px;
+  }
 }
 .card-item__plate {
   border-width: 0 1px 1px 1px;
@@ -889,7 +900,7 @@ html {
 @media (max-width: 768px) {
   .contacts__select {
     order: 1;
-    margin: 100px auto 250px;
+    margin: 99px auto 250px;
   }
 }
 

@@ -7,6 +7,7 @@
 
     @include media-tablet {
       width: 280px;
+      height: 350px;
     }
   }
 
@@ -22,6 +23,11 @@
     font: 1.6rem / 20px $text-font;
     text-align: center;
     margin: 14px auto 36px;
+
+    @include media-tablet {
+      width: 201px;
+      margin: 10px auto 20px;
+    }
   }
 
   &__plate {
