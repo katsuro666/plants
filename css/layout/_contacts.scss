@@ -50,6 +50,11 @@
   background-color: $background;
   border: 1px solid #000000;
   border-radius: 20px;
+
+  @include media-tablet {
+    top: 263px;
+    right: 110px;
+  }
 }
 
 .city-card__container {
@@ -60,11 +65,13 @@
 .city-card__heading {
   color: #000000;
   width: 128px;
+  margin: 0;
 }
 
 .city-card__content {
   color: $text-light;
   letter-spacing: 0.05em;
+  margin: 0;
 }
 
 .city-card--active {

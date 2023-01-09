@@ -11,11 +11,21 @@
   @include media-tablet {
     height: 117px;
   }
+
+  @include media-mobile {
+    height: 96px;
+  }
 }
 
 .header__logo {
   margin-bottom: 8px;
   margin-left: 2px;
+}
+
+.header__nav {
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .header__nav ul {
@@ -36,4 +46,11 @@
 
 .header__burger {
   display: none;
+  background-image: url(../assets/icons/burger.png);
+  width: 40px;
+  height: 26px;
+
+  @include media-mobile {
+    display: block;
+  }
 }

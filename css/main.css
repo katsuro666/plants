@@ -226,7 +226,7 @@ html {
 }
 @media (max-width: 380px) {
   .container {
-    max-width: 280px;
+    max-width: 330px;
   }
 }
 
@@ -256,10 +256,21 @@ html {
     height: 117px;
   }
 }
+@media (max-width: 380px) {
+  .header-container {
+    height: 96px;
+  }
+}
 
 .header__logo {
   margin-bottom: 8px;
   margin-left: 2px;
+}
+
+@media (max-width: 380px) {
+  .header__nav {
+    display: none;
+  }
 }
 
 .header__nav ul {
@@ -279,6 +290,14 @@ html {
 
 .header__burger {
   display: none;
+  background-image: url(../assets/icons/burger.png);
+  width: 40px;
+  height: 26px;
+}
+@media (max-width: 380px) {
+  .header__burger {
+    display: block;
+  }
 }
 
 .welcome {
@@ -569,6 +588,12 @@ html {
   border: 1px solid #000000;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .city-card {
+    top: 263px;
+    right: 110px;
+  }
+}
 
 .city-card__container {
   display: flex;
@@ -578,11 +603,13 @@ html {
 .city-card__heading {
   color: #000000;
   width: 128px;
+  margin: 0;
 }
 
 .city-card__content {
   color: rgb(113, 113, 113);
   letter-spacing: 0.05em;
+  margin: 0;
 }
 
 .city-card--active {
@@ -738,6 +765,7 @@ html {
   font: 700 1rem/13px "Inika", serif;
   color: rgb(113, 113, 113);
   align-self: center;
+  margin-top: 24px;
 }
 
 .card-item {
