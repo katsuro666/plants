@@ -45,6 +45,11 @@
     background-color: $brand-highlight;
     color: #ffffff;
   }
+
+  @include media-tablet {
+    margin: 40px 38px 0 0; 
+  }
+  
 }
 
 .prices-slogan__button {

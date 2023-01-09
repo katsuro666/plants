@@ -12,6 +12,10 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 38px 0 80px;
+
+  @include media-tablet {
+    margin: 60px 0 40px;
+  }
 }
 
 .service__heading {
@@ -20,6 +24,10 @@
   color: $brand-color;
   width: 306px;
   margin-right: 142px;
+
+  @include media-tablet {
+    font: 3.5rem / 45px $additional-font;
+  }
 }
 
 .service__cards {
@@ -29,4 +37,10 @@
   column-gap: 115px;
   row-gap: 55px;
   margin-bottom: 121px;
+
+  @include media-tablet {
+    column-gap: 106px;
+    row-gap: 38px;
+    margin-bottom: 70px;
+  }
 }

@@ -4,6 +4,10 @@
 
   &__img {
     border-radius: 20px 20px 0px 0px;
+
+    @include media-tablet {
+      width: 280px;
+    }
   }
 
   &__heading {
@@ -25,6 +29,10 @@
     border-style: solid;
     border-color: #E3E1D5;
     border-radius: 0px 0px 20px 20px;
+  }
+
+  @include media-tablet {
+    width: 280px;
   }
 }
 
