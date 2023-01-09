@@ -12,6 +12,10 @@
   margin-top: 144px;
   letter-spacing: 0.05em;
 
+  @include media-tablet {
+    order: 1;
+    margin: 100px auto 250px;
+  }
 }
 
 .select--active {

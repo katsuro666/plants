@@ -6,6 +6,10 @@
   position: relative;
   display: flex; 
   justify-content: space-between;
+
+  @include media-tablet {
+    flex-direction: column;
+  }
 }
 
 .contacts__women {
@@ -13,6 +17,14 @@
   width: 400px;
   height: 497px;
   margin-top: 49px;
+
+  @include media-tablet {
+    order: 2;
+    width: 200px;
+    height: 248px;
+    background-size: contain;
+    margin: 0 auto;
+  }
 }
 
 .contacts__heading {
@@ -20,6 +32,11 @@
   color: $brand-color;
   margin-top: 56px;
   margin-left: 46px;
+
+  @include media-tablet {
+    order: 0;
+    margin: 40px auto 0;
+  }
 }
 
 .city-card {
@@ -38,7 +55,6 @@
 .city-card__container {
   display: flex;
   font: 1.6rem / 40px $text-font;
-
 }
 
 .city-card__heading {

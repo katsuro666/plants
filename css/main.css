@@ -521,6 +521,11 @@ html {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .contacts-container {
+    flex-direction: column;
+  }
+}
 
 .contacts__women {
   background-image: url("../assets/images/contact-woman.png");
@@ -528,12 +533,27 @@ html {
   height: 497px;
   margin-top: 49px;
 }
+@media (max-width: 768px) {
+  .contacts__women {
+    order: 2;
+    width: 200px;
+    height: 248px;
+    background-size: contain;
+    margin: 0 auto;
+  }
+}
 
 .contacts__heading {
   font: 700 4rem/52px "Inika", serif;
   color: rgb(73, 154, 24);
   margin-top: 56px;
   margin-left: 46px;
+}
+@media (max-width: 768px) {
+  .contacts__heading {
+    order: 0;
+    margin: 40px auto 0;
+  }
 }
 
 .city-card {
@@ -830,6 +850,12 @@ html {
   height: 50px;
   margin-top: 144px;
   letter-spacing: 0.05em;
+}
+@media (max-width: 768px) {
+  .contacts__select {
+    order: 1;
+    margin: 100px auto 250px;
+  }
 }
 
 .select--active {
