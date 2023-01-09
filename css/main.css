@@ -469,6 +469,12 @@ html {
   color: #000000;
   margin: 0 0 60px;
 }
+@media (max-width: 768px) {
+  .prices-rates__heading {
+    font: 700 3.5rem/42px "Inter", sans-serif;
+    margin-bottom: 50px;
+  }
+}
 
 .prices-slogan {
   display: flex;
@@ -486,12 +492,24 @@ html {
 .prices-slogan__heading span {
   color: rgb(73, 154, 24);
 }
+@media (max-width: 768px) {
+  .prices-slogan__heading {
+    font: 700 2.5rem/35px "Inter", sans-serif;
+    width: 296px;
+    margin: 139px 0 22px;
+  }
+}
 
 .prices-leafs {
   background-image: url("../assets/images/prices-leafs.png");
   width: 152px;
   height: 175px;
   margin: 39px 0 115px;
+}
+@media (max-width: 768px) {
+  .prices-leafs {
+    margin: 34px 0 88px;
+  }
 }
 
 .contacts {

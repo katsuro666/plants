@@ -11,6 +11,11 @@
   font: 700 4rem / 48px $text-font;
   color: #000000;
   margin: 0 0 60px;
+
+  @include media-tablet {
+    font: 700 3.5rem / 42px $text-font;
+    margin-bottom: 50px;
+  }
 }
 
 .prices-slogan {
@@ -29,6 +34,12 @@
   & span {
     color: $brand-color;
   }
+
+  @include media-tablet {
+    font: 700 2.5rem / 35px $text-font;
+    width: 296px;
+    margin: 139px 0 22px;
+  }
 }
 
 .prices-leafs {
@@ -36,4 +47,8 @@
   width: 152px;
   height: 175px;
   margin: 39px 0 115px;
+
+  @include media-tablet {
+    margin: 34px 0 88px;
+  }
 }
