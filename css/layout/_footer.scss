@@ -9,14 +9,33 @@
   & p {
     margin: 0;
   }
+
+  @include media-tablet  {
+    flex-direction: column;
+    padding: 33px 0;
+  }
+}
+
+.footer__copyright {
+  @include media-tablet {
+    margin: 0 auto;
+  }
 }
 
 .footer__copyright span {
   margin-right: 15px;
+
+  @include media-tablet {
+    margin-right: 20px;
+  }
 }
 
 .footer__school {
   padding-left: 83px;
+
+  @include media-tablet {
+    padding: 0;
+  }
 }
 
 .footer__socials {
@@ -28,5 +47,17 @@
   & li {
     margin-left: 28px;
     margin-top: 5px;
+
+    @include media-tablet {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include media-tablet {
+    padding: 0;
   }
 }
