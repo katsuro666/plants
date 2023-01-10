@@ -24,13 +24,39 @@
 
 .header__nav {
   @include media-mobile {
-    display: none;
+    transform: translate(500%);
+    // transition: all ease 2s;
+  }
+}
+
+.header__nav--active {
+  @include media-mobile {
+    transform: translate(0%);
+    position: absolute;
+    background-color: $selected;
+    top: 25px;
+    right: 0;
+    // transition: all ease 2s;
   }
 }
 
 .header__nav ul {
   display: flex;
   list-style: none;
+
+  @include media-mobile {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  & li {
+    @include media-mobile {
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.26);
+    width: 175px;
+    text-align: right;
+    }
+  }
 }
 
 .nav__item {
@@ -42,6 +68,12 @@
     color: $brand-highlight;
     font-weight: 700;
   }
+
+  @include media-mobile {
+    margin: 0;
+    padding: 10px 25px;
+    width: 100%;
+  }
 }
 
 .header__burger {
@@ -52,5 +84,21 @@
 
   @include media-mobile {
     display: block;
+  }
+}
+
+.nav__cross {
+  display: none;
+
+  @include media-mobile {
+    display: block;
+    background-image: url(../assets/icons/cross.png);
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    z-index: 10;
   }
 }
