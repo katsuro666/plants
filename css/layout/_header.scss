@@ -24,21 +24,21 @@
 
 .header__nav {
   @include media-mobile {
-    // transform: translate(500%);
-    // transition: all ease 2s;
-    display: none;
+    transform: translate(200%);
+    transition: all ease 0.1s;
+    // display: none;
   }
 }
 
 .header__nav--active {
   @include media-mobile {
-    // transform: translate(0%);
-    display: block;
+    transform: translate(0%);
+    // display: block;
     position: absolute;
     background-color: $selected;
     top: 25px;
     right: 0;
-    // transition: all ease 2s;
+    transition: all ease 0.1s;
   }
 }
 
@@ -46,6 +46,7 @@
   display: flex;
   list-style: none;
   padding: 0;
+  
 
   @include media-mobile {
     flex-direction: column;
@@ -55,9 +56,10 @@
 
   & li {
     @include media-mobile {
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.26);
-    width: 175px;
-    text-align: right;
+      display: block;
+      box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.26);
+      width: 175px;
+      text-align: right;
     }
   }
 }
@@ -73,9 +75,11 @@
   }
 
   @include media-mobile {
+    display: block;
     margin: 0;
-    padding: 10px 25px;
-    width: 100%;
+    padding: 0px 20px;
+    // width: 100%;
+    // width: 175px;
   }
 }
 
