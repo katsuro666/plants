@@ -214,19 +214,25 @@ html {
 }
 
 .container {
-  max-width: 1222px; /* 1 */
+  max-width: 1440px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
   width: 100%; /* 1 */
+  padding-left: 100px;
+  padding-right: 100px;
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 668px;
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media (max-width: 380px) {
   .container {
-    max-width: 330px;
+    max-width: 380px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -269,13 +275,13 @@ html {
 
 @media (max-width: 380px) {
   .header__nav {
-    transform: translate(500%);
+    display: none;
   }
 }
 
 @media (max-width: 380px) {
   .header__nav--active {
-    transform: translate(0%);
+    display: block;
     position: absolute;
     background-color: rgb(193, 230, 152);
     top: 25px;
@@ -286,6 +292,7 @@ html {
 .header__nav ul {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 @media (max-width: 380px) {
   .header__nav ul {
@@ -373,7 +380,7 @@ html {
     margin: 40px 0 126px auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 380px) {
   .welcome-leafs {
     display: none;
   }
@@ -389,7 +396,7 @@ html {
     margin: 40px auto 70px 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 380px) {
   .welcome-slogan {
     margin: 24px auto;
     width: 100%;
@@ -409,7 +416,7 @@ html {
     font-size: 3.5rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 380px) {
   .welcome-slogan__heading {
     font: 700 2.5rem/35px "Inter", sans-serif;
   }
@@ -426,9 +433,9 @@ html {
     padding-left: 5px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 380px) {
   .welcome-slogan__content {
-    margin: 20px 0;
+    margin: 23px 0;
   }
 }
 
@@ -480,7 +487,7 @@ html {
   .about-slogan__heading {
     font: 2.5rem/33px "Inika", serif;
     width: 288px;
-    margin-bottom: 21px;
+    margin-bottom: 12px;
   }
 }
 
@@ -538,7 +545,7 @@ html {
 }
 @media (max-width: 380px) {
   .service__head {
-    margin: 30px 0 40px;
+    margin: 35px 0 27px;
   }
 }
 
@@ -561,7 +568,17 @@ html {
 }
 
 .service__filters {
-  margin-top: 35px;
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .service__filters {
+    margin-top: 0;
+  }
+}
+@media (max-width: 380px) {
+  .service__filters {
+    margin-top: 40px;
+  }
 }
 
 .service__cards {
@@ -603,7 +620,7 @@ html {
 }
 @media (max-width: 380px) {
   .prices-rates {
-    margin: 25px auto 20px;
+    margin: 20px auto 12px;
   }
 }
 
@@ -621,7 +638,7 @@ html {
 @media (max-width: 380px) {
   .prices-rates__heading {
     font: 700 2.5rem/30px "Inter", sans-serif;
-    margin: 0 auto 40px;
+    margin: 0 auto 35px;
     text-align: center;
   }
 }
@@ -652,7 +669,7 @@ html {
 @media (max-width: 380px) {
   .prices-slogan__heading {
     font: 700 2rem/35px "Inter", sans-serif;
-    margin: 0 auto 14px;
+    margin: 0 auto 20px;
     width: 230px;
     text-align: center;
   }
@@ -702,14 +719,14 @@ html {
     width: 200px;
     height: 248px;
     background-size: contain;
-    margin: 0 auto;
+    margin: 0 244px 0;
   }
 }
 @media (max-width: 380px) {
   .contacts__women {
     width: 100px;
     height: 124px;
-    margin-top: 132px;
+    margin: 132px auto 0;
   }
 }
 
@@ -806,7 +823,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  margin: 40px auto;
   color: #000000;
   font: 2rem/50px "Inter", sans-serif;
 }
@@ -816,13 +833,13 @@ html {
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
-    padding: 20px 0;
+    margin: 25px auto 18px;
     font: 2rem/24px "Inter", sans-serif;
   }
 }
 @media (max-width: 380px) {
   .footer-container {
-    padding: 22px 0 5px;
+    margin-bottom: 0;
   }
 }
 
@@ -859,6 +876,7 @@ html {
 .footer__socials {
   list-style: none;
   display: flex;
+  align-items: center;
   margin: 0;
 }
 .footer__socials li {
@@ -872,6 +890,11 @@ html {
   }
   .footer__socials li:first-child {
     margin-left: 0;
+  }
+}
+@media (max-width: 380px) {
+  .footer__socials li {
+    margin-top: 11px;
   }
 }
 @media (max-width: 768px) {
@@ -907,7 +930,7 @@ html {
   color: rgb(224, 103, 51);
   font-weight: 400;
 }
-@media (max-width: 768px) {
+@media (max-width: 380px) {
   .welcome-slogan__button {
     font-size: 1rem;
     width: 100px;
@@ -1065,7 +1088,7 @@ html {
 @media (max-width: 380px) {
   .accordion__item {
     width: 180px;
-    padding: 16px 30px;
+    padding: 16px 35px;
     margin-top: 14px;
   }
 }
@@ -1193,6 +1216,7 @@ html {
   .contacts__select {
     margin: 80px auto 0;
     width: 300px;
+    padding-right: 20px;
   }
 }
 

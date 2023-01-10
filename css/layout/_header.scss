@@ -24,14 +24,16 @@
 
 .header__nav {
   @include media-mobile {
-    transform: translate(500%);
+    // transform: translate(500%);
     // transition: all ease 2s;
+    display: none;
   }
 }
 
 .header__nav--active {
   @include media-mobile {
-    transform: translate(0%);
+    // transform: translate(0%);
+    display: block;
     position: absolute;
     background-color: $selected;
     top: 25px;
@@ -43,6 +45,7 @@
 .header__nav ul {
   display: flex;
   list-style: none;
+  padding: 0;
 
   @include media-mobile {
     flex-direction: column;

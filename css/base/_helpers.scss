@@ -6,17 +6,23 @@
 }
 
 .container {
-  max-width: 1222px; /* 1 */
+  max-width: 1440px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
   width: 100%; /* 1 */
+  padding-left: 100px;
+  padding-right: 100px;
 
   @media (max-width: $tablet-width) {
-  max-width: 668px;
+  max-width: 768px;
+  padding-left: 50px;
+  padding-right: 50px;
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 330px;
+    max-width: 380px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 

@@ -12,7 +12,7 @@
   width: 449px;
   height: 407px;
   margin: 54px auto 55px -8px;
-
+  
   @include media-tablet {
     order: 1;
     width: 280px;
@@ -22,7 +22,7 @@
     margin: 40px 0 126px auto;
   }
 
-  @include media-tablet {
+  @include media-mobile {
     display: none;
   }
 }
@@ -36,7 +36,7 @@
     margin: 40px auto 70px 0;
   }
 
-  @include media-tablet {
+  @include media-mobile {
     margin: 24px auto;
     width: 100%;
   }
@@ -55,7 +55,7 @@
     font-size: 3.5rem;
   }
 
-  @include media-tablet {
+  @include media-mobile {
     font: 700 2.5rem / 35px $text-font;
   }  
 }
@@ -70,7 +70,7 @@
     padding-left: 5px;
   }
 
-  @include media-tablet {
-    margin: 20px 0;
+  @include media-mobile {
+    margin: 23px 0;
   }
 }

@@ -23,13 +23,14 @@
     width: 200px;
     height: 248px;
     background-size: contain;
-    margin: 0 auto;  
+    // margin: 0 auto;  
+    margin: 0 244px 0;
   }
 
   @include media-mobile {
     width: 100px;
     height: 124px;
-    margin-top: 132px;
+    margin: 132px auto 0;
   }
 }
 
