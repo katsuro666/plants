@@ -107,4 +107,8 @@
   color: $text-light;
   align-self: center;
   margin-top: 24px;
+
+  @include media-mobile {
+    margin-top: 5px;
+  }
 }

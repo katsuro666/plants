@@ -16,6 +16,11 @@
     order: 1;
     margin: 99px auto 250px;
   }
+
+  @include media-mobile {
+    margin: 80px auto 0;
+    width: 300px;
+  } 
 }
 
 .select--active {
@@ -49,6 +54,11 @@
   background-color: $background-active;
   width: 450px;
   padding: 27px 35px 31px;
+
+  @include media-mobile {
+    width: 300px;
+    padding: 17px 25px 10px;
+  }
 }
 
 .select__dropdown--active {
@@ -73,6 +83,9 @@
     height: 1px;
     background-color: rgba(217, 217, 217, 1);
      
+    @include media-mobile {
+      width: 250px;
+    }
   }
 
   &:first-child {

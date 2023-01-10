@@ -25,6 +25,16 @@
     background-size: contain;
     margin: 0 auto;  
   }
+
+  @include media-mobile {
+    width: 100px;
+    height: 124px;
+    margin-top: 132px;
+  }
+}
+
+.contacts__women--hide {
+  display: none;
 }
 
 .contacts__heading {
@@ -37,6 +47,11 @@
     order: 0;
     margin: 40px auto 0;
   }
+
+  @include media-mobile {
+    font: 700 2.5rem / 33px $additional-font;
+    margin: 25px auto 0;
+  }  
 }
 
 .city-card {
@@ -55,23 +70,46 @@
     top: 263px;
     right: 110px;
   }
+
+  @include media-mobile {
+    position: static;
+    order: 3;
+    margin: 50px auto 33px;
+    width: 282px;
+    padding: 23px 36px 23px 30px;
+    
+  }
 }
 
 .city-card__container {
   display: flex;
   font: 1.6rem / 40px $text-font;
+
+  @include media-mobile {
+    margin-bottom: 15px;
+  }
 }
 
 .city-card__heading {
   color: #000000;
   width: 128px;
   margin: 0;
+
+  @include media-mobile {
+    width: 65px;
+    line-height: 20px;
+  }
 }
 
 .city-card__content {
   color: $text-light;
   letter-spacing: 0.05em;
   margin: 0;
+
+  @include media-mobile {
+    line-height: 20px;
+    margin-left: 5px;
+  }  
 }
 
 .city-card--active {

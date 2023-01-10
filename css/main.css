@@ -705,6 +705,17 @@ html {
     margin: 0 auto;
   }
 }
+@media (max-width: 380px) {
+  .contacts__women {
+    width: 100px;
+    height: 124px;
+    margin-top: 132px;
+  }
+}
+
+.contacts__women--hide {
+  display: none;
+}
 
 .contacts__heading {
   font: 700 4rem/52px "Inika", serif;
@@ -716,6 +727,12 @@ html {
   .contacts__heading {
     order: 0;
     margin: 40px auto 0;
+  }
+}
+@media (max-width: 380px) {
+  .contacts__heading {
+    font: 700 2.5rem/33px "Inika", serif;
+    margin: 25px auto 0;
   }
 }
 
@@ -737,10 +754,24 @@ html {
     right: 110px;
   }
 }
+@media (max-width: 380px) {
+  .city-card {
+    position: static;
+    order: 3;
+    margin: 50px auto 33px;
+    width: 282px;
+    padding: 23px 36px 23px 30px;
+  }
+}
 
 .city-card__container {
   display: flex;
   font: 1.6rem/40px "Inter", sans-serif;
+}
+@media (max-width: 380px) {
+  .city-card__container {
+    margin-bottom: 15px;
+  }
 }
 
 .city-card__heading {
@@ -748,11 +779,23 @@ html {
   width: 128px;
   margin: 0;
 }
+@media (max-width: 380px) {
+  .city-card__heading {
+    width: 65px;
+    line-height: 20px;
+  }
+}
 
 .city-card__content {
   color: rgb(113, 113, 113);
   letter-spacing: 0.05em;
   margin: 0;
+}
+@media (max-width: 380px) {
+  .city-card__content {
+    line-height: 20px;
+    margin-left: 5px;
+  }
 }
 
 .city-card--active {
@@ -932,6 +975,11 @@ html {
   color: rgb(113, 113, 113);
   align-self: center;
   margin-top: 24px;
+}
+@media (max-width: 380px) {
+  .city-card__button {
+    margin-top: 5px;
+  }
 }
 
 .card-item {
@@ -1131,6 +1179,12 @@ html {
     margin: 99px auto 250px;
   }
 }
+@media (max-width: 380px) {
+  .contacts__select {
+    margin: 80px auto 0;
+    width: 300px;
+  }
+}
 
 .select--active {
   background-color: rgb(193, 230, 152);
@@ -1164,6 +1218,12 @@ html {
   width: 450px;
   padding: 27px 35px 31px;
 }
+@media (max-width: 380px) {
+  .select__dropdown {
+    width: 300px;
+    padding: 17px 25px 10px;
+  }
+}
 
 .select__dropdown--active {
   display: block;
@@ -1186,6 +1246,11 @@ html {
   width: 380px;
   height: 1px;
   background-color: rgb(217, 217, 217);
+}
+@media (max-width: 380px) {
+  .select__item::after {
+    width: 250px;
+  }
 }
 .select__item:first-child {
   margin-top: 0;
