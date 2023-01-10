@@ -452,6 +452,11 @@ html {
     margin: 40px 0;
   }
 }
+@media (max-width: 380px) {
+  .about-slogan {
+    margin: 30px 0 0;
+  }
+}
 
 .about-slogan__heading {
   font: 4rem/52px "Inika", serif;
@@ -471,10 +476,22 @@ html {
     text-align: center;
   }
 }
+@media (max-width: 380px) {
+  .about-slogan__heading {
+    font: 2.5rem/33px "Inika", serif;
+    width: 288px;
+    margin-bottom: 21px;
+  }
+}
 
 .about-slogan__content {
   font: 2rem/30px "Inter", sans-serif;
   margin: 0;
+}
+@media (max-width: 380px) {
+  .about-slogan__content {
+    font: 1.5rem/25px "Inter", sans-serif;
+  }
 }
 
 .about-plant {
@@ -489,6 +506,13 @@ html {
     height: 258px;
     background-size: contain;
     margin: 28px auto 95px;
+  }
+}
+@media (max-width: 380px) {
+  .about-plant {
+    width: 140px;
+    height: 145px;
+    margin: 0 auto 31px;
   }
 }
 
