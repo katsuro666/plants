@@ -820,10 +820,20 @@ html {
     font: 2rem/24px "Inter", sans-serif;
   }
 }
+@media (max-width: 380px) {
+  .footer-container {
+    padding: 22px 0 5px;
+  }
+}
 
 @media (max-width: 768px) {
   .footer__copyright {
     margin: 10px auto 20px auto;
+  }
+}
+@media (max-width: 380px) {
+  .footer__copyright {
+    margin: 0 auto 16px;
   }
 }
 
