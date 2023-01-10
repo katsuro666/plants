@@ -592,9 +592,19 @@ html {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 380px) {
+  .prices-container {
+    flex-direction: column;
+  }
+}
 
 .prices-rates {
   margin: 36px 0 129px;
+}
+@media (max-width: 380px) {
+  .prices-rates {
+    margin: 25px auto 20px;
+  }
 }
 
 .prices-rates__heading {
@@ -606,6 +616,13 @@ html {
   .prices-rates__heading {
     font: 700 3.5rem/42px "Inter", sans-serif;
     margin: 0 auto 55px 15px;
+  }
+}
+@media (max-width: 380px) {
+  .prices-rates__heading {
+    font: 700 2.5rem/30px "Inter", sans-serif;
+    margin: 0 auto 40px;
+    text-align: center;
   }
 }
 
@@ -632,6 +649,14 @@ html {
     margin: 135px 0 29px;
   }
 }
+@media (max-width: 380px) {
+  .prices-slogan__heading {
+    font: 700 2rem/35px "Inter", sans-serif;
+    margin: 0 auto 14px;
+    width: 230px;
+    text-align: center;
+  }
+}
 
 .prices-leafs {
   background-image: url("../assets/images/prices-leafs.png");
@@ -642,6 +667,11 @@ html {
 @media (max-width: 768px) {
   .prices-leafs {
     margin: 34px 0 88px;
+  }
+}
+@media (max-width: 380px) {
+  .prices-leafs {
+    display: none;
   }
 }
 
@@ -876,6 +906,14 @@ html {
   color: rgb(224, 103, 51);
   font-weight: 400;
 }
+@media (max-width: 380px) {
+  .prices-slogan__button {
+    width: 121px;
+    height: 35px;
+    font: 700 1.5rem/20px "Inika", serif;
+    margin: 0 auto 40px;
+  }
+}
 
 .tariff__order-button {
   border: none;
@@ -947,6 +985,11 @@ html {
   border-radius: 20px;
   padding: 34px 41px;
 }
+@media (max-width: 380px) {
+  .prices-rates__accordion {
+    padding: 29px 22px;
+  }
+}
 
 .accordion__item {
   position: relative;
@@ -961,17 +1004,30 @@ html {
 .accordion__item:first-child {
   margin-top: 0;
 }
+@media (max-width: 380px) {
+  .accordion__item {
+    width: 180px;
+    padding: 16px 30px;
+    margin-top: 14px;
+  }
+}
 
 .item__name {
   font: 700 2rem/20px "Inter", sans-serif;
   color: #000000;
   margin: 0;
 }
+@media (max-width: 380px) {
+  .item__name {
+    font: 700 1.5rem/20px "Inter", sans-serif;
+  }
+}
 
 .item__arrow {
   background-image: url("../assets/icons/accordion_arrow.svg");
   width: 16px;
   height: 16px;
+  margin-top: 2px;
 }
 
 .tariff {
@@ -984,6 +1040,12 @@ html {
   background-color: rgb(214, 231, 210);
   padding: 16px 40px 12px;
   border-radius: 20px;
+}
+@media (max-width: 380px) {
+  .tariff {
+    width: 180px;
+    padding: 16px 30px 12px;
+  }
 }
 
 .tariff--active {
@@ -1001,6 +1063,11 @@ html {
   color: #000000;
   margin: 0;
 }
+@media (max-width: 380px) {
+  .tariff__name p {
+    font: 700 1.5rem/20px "Inter", sans-serif;
+  }
+}
 
 .tariff__arrow {
   background-image: url("../assets/icons/accordion_arrow--active.svg");
@@ -1013,6 +1080,11 @@ html {
   width: 164px;
   height: 1px;
   margin: 12px auto 6px;
+}
+@media (max-width: 380px) {
+  .tariff__line {
+    width: 120px;
+  }
 }
 
 .tariff__desc {

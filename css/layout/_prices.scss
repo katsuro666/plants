@@ -1,10 +1,18 @@
 .prices-container {
   display: flex;
   justify-content: space-between;
+
+  @include media-mobile {
+    flex-direction: column;
+  }
 }
 
 .prices-rates {
   margin: 36px 0 129px;
+
+  @include media-mobile {
+    margin: 25px auto 20px;
+  }
 }
 
 .prices-rates__heading {
@@ -14,8 +22,13 @@
 
   @include media-tablet {
     font: 700 3.5rem / 42px $text-font;
-    // margin-bottom: 50px;
     margin: 0 auto 55px 15px;
+  }
+
+  @include media-mobile {
+    font: 700 2.5rem / 30px $text-font;
+    margin: 0 auto 40px;
+    text-align: center;
   }
 }
 
@@ -41,6 +54,13 @@
     width: 296px;
     margin: 135px 0 29px;
   }
+
+  @include media-mobile {
+    font: 700 2rem / 35px $text-font;
+    margin: 0 auto 14px;
+    width: 230px;
+    text-align: center;
+  }
 }
 
 .prices-leafs {
@@ -51,5 +71,9 @@
 
   @include media-tablet {
     margin: 34px 0 88px;
+  }
+
+  @include media-mobile {
+    display: none;
   }
 }

@@ -81,6 +81,13 @@
     color: $brand-highlight;
     font-weight: 400;
   }
+
+  @include media-mobile {
+    width: 121px;
+    height: 35px;
+    font: 700 1.5rem / 20px $additional-font;
+    margin: 0 auto 40px;
+  }
 }
 
 .tariff__order-button {
