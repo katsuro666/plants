@@ -536,6 +536,11 @@ html {
     margin: 60px 0 40px;
   }
 }
+@media (max-width: 380px) {
+  .service__head {
+    margin: 30px 0 40px;
+  }
+}
 
 .service__heading {
   font: 4rem/52px "Inika", serif;
@@ -548,6 +553,15 @@ html {
   .service__heading {
     font: 3.5rem/45px "Inika", serif;
   }
+}
+@media (max-width: 380px) {
+  .service__heading {
+    font: 2.5rem/33px "Inika", serif;
+  }
+}
+
+.service__filters {
+  margin-top: 35px;
 }
 
 .service__cards {
@@ -565,6 +579,12 @@ html {
          column-gap: 106px;
     row-gap: 38px;
     margin-bottom: 70px;
+  }
+}
+@media (max-width: 380px) {
+  .service__cards {
+    row-gap: 34px;
+    margin-bottom: 27px;
   }
 }
 
@@ -830,6 +850,14 @@ html {
 @media (max-width: 768px) {
   .service__button {
     margin: 44px 35px 0 0;
+  }
+}
+@media (max-width: 380px) {
+  .service__button {
+    width: 121px;
+    height: 35px;
+    font: 1.5rem/20px "Inika", serif;
+    margin: 0 10px 10px 0;
   }
 }
 

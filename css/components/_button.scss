@@ -55,6 +55,13 @@
   @include media-tablet {
     margin: 44px 35px 0 0; 
   }
+
+  @include media-mobile {
+    width: 121px;
+    height: 35px;
+    font: 1.5rem / 20px $additional-font;
+    margin: 0 10px 10px 0;
+  }
   
 }
 

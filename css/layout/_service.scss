@@ -16,6 +16,10 @@
   @include media-tablet {
     margin: 60px 0 40px;
   }
+
+  @include media-mobile {
+    margin: 30px 0 40px;
+  }
 }
 
 .service__heading {
@@ -28,6 +32,14 @@
   @include media-tablet {
     font: 3.5rem / 45px $additional-font;
   }
+
+  @include media-mobile {
+    font: 2.5rem / 33px $additional-font;
+  }
+}
+
+.service__filters {
+  margin-top: 35px;
 }
 
 .service__cards {
@@ -42,5 +54,10 @@
     column-gap: 106px;
     row-gap: 38px;
     margin-bottom: 70px;
+  }
+
+  @include media-mobile {
+    row-gap: 34px;
+    margin-bottom: 27px;
   }
 }
