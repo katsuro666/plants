@@ -22,55 +22,57 @@ let serviceButtons = document.querySelectorAll('.service__button')
 let cardsGarden = document.querySelectorAll('.card--garden')
 let cardsLawn = document.querySelectorAll('.card--lawn')
 let cardsPlanting = document.querySelectorAll('.card--planting')
+let cards = document.querySelectorAll('.card-item')
 
-function cardsFilter() {
-  if (this.classList.contains('service__button--active')) {
-    serviceButtons.forEach(item => item.classList.remove('service__button--active'))
-  } else {
-    serviceButtons.forEach(item => item.classList.remove('service__button--active'))
-    this.classList.add('service__button--active')
-  }
-}
+let flag = false;
 
 filterGardenButton.addEventListener('click', function() {
-  if (this.classList.contains('service__button--active')) {
-    serviceButtons.forEach(item => item.classList.remove('service__button--active'))
-    cardsGarden.forEach(item => item.classList.remove('card-item--inactive'))
-    cardsLawn.forEach(item => item.classList.remove('card-item--inactive'))
-    cardsPlanting.forEach(item => item.classList.remove('card-item--inactive'))
+  if (flag === false) {
+    cards.forEach(item => item.classList.add('card-item--inactive'))
+  }
+  if (filterLawnButton.classList.contains('service__button--active') && filterPlantingButton.classList.contains('service__button--active')) {
+    return
   } else {
-    serviceButtons.forEach(item => item.classList.remove('service__button--active'))
-    this.classList.add('service__button--active')
-    cardsGarden.forEach(item => item.classList.remove('card-item--inactive'))
-    cardsLawn.forEach(item => item.classList.add('card-item--inactive'))
-    cardsPlanting.forEach(item => item.classList.add('card-item--inactive'))
+    cardsGarden.forEach(item => item.classList.toggle('card-item--inactive'))
+    this.classList.toggle('service__button--active')
+    flag = true
   }
 })
 filterLawnButton.addEventListener('click', function() {
-  if (this.classList.contains('service__button--active')) {
-    serviceButtons.forEach(item => item.classList.remove('service__button--active'))
-    cardsLawn.forEach(item => item.classList.remove('card-item--inactive'))
-    cardsGarden.forEach(item => item.classList.remove('card-item--inactive'))
-    cardsPlanting.forEach(item => item.classList.remove('card-item--inactive'))
+  if (flag === false) {
+    cards.forEach(item => item.classList.add('card-item--inactive'))
+  }
+  if (filterGardenButton.classList.contains('service__button--active') && filterPlantingButton.classList.contains('service__button--active')) {
+    return
   } else {
-    serviceButtons.forEach(item => item.classList.remove('service__button--active'))
-    this.classList.add('service__button--active')
-    cardsLawn.forEach(item => item.classList.remove('card-item--inactive'))
-    cardsGarden.forEach(item => item.classList.add('card-item--inactive'))
-    cardsPlanting.forEach(item => item.classList.add('card-item--inactive'))
+    cardsLawn.forEach(item => item.classList.toggle('card-item--inactive'))
+    this.classList.toggle('service__button--active')
+    flag = true
   }
 })
 filterPlantingButton.addEventListener('click', function() {
-  if (this.classList.contains('service__button--active')) {
-    serviceButtons.forEach(item => item.classList.remove('service__button--active'))
-    cardsPlanting.forEach(item => item.classList.remove('card-item--inactive'))
-    cardsLawn.forEach(item => item.classList.remove('card-item--inactive'))
-    cardsGarden.forEach(item => item.classList.remove('card-item--inactive'))
+  if (flag === false) {
+    cards.forEach(item => item.classList.add('card-item--inactive'))
+  }
+  if (filterGardenButton.classList.contains('service__button--active') && filterLawnButton.classList.contains('service__button--active')) {
+    return
   } else {
-    serviceButtons.forEach(item => item.classList.remove('service__button--active'))
-    this.classList.add('service__button--active')
-    cardsPlanting.forEach(item => item.classList.remove('card-item--inactive'))
-    cardsLawn.forEach(item => item.classList.add('card-item--inactive'))
-    cardsGarden.forEach(item => item.classList.add('card-item--inactive'))
+    cardsPlanting.forEach(item => item.classList.toggle('card-item--inactive'))
+    this.classList.toggle('service__button--active')
+    flag = true
   }
 })
+
+// let chooseBasic = document.querySelector('.accordion--basic')
+// let chooseStandard = document.querySelector('.accordion--standard')
+// let choosePro = document.querySelector('.accordion--pro')
+
+// let showBasic = document.querySelector('.tariff--basic')
+// let showStandard = document.querySelector('.tariff--standard')
+// let showPro = document.querySelector('.tariff--pro')
+
+// chooseBasic.addEventListener('click', e => {
+//   console.log(e.target)
+//   event.stopPropagation()
+//   showBasic.classList.toggle('tariff--active')
+// }, true)
