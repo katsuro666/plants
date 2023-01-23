@@ -276,8 +276,8 @@ html {
 
 @media (max-width: 380px) {
   .header__nav {
-    transform: translate(200%);
-    transition: all ease 0.1s;
+    transform: translate(300%, -200%);
+    transition: all ease 1s;
   }
 }
 

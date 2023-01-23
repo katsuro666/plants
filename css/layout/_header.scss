@@ -24,8 +24,8 @@
 
 .header__nav {
   @include media-mobile {
-    transform: translate(200%);
-    transition: all ease 0.1s;
+    transform: translate(300%, -200%);
+    transition: all ease 1s;
     // display: none;
   }
 }
