@@ -10,16 +10,20 @@
 
 .accordion__item {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  background-color: $background;
+  // display: flex;
+  // justify-content: space-between;
+  // background-color: $background;
   width: 250px;
   border-radius: 20px;
-  padding: 16px 40px;
+  // padding: 16px 40px;
   margin-top: 30px;
 
   &:first-child {
   margin-top: 0;  
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 
   @include media-mobile {
@@ -27,6 +31,15 @@
     padding: 16px 35px;
     margin-top: 14px;
   }
+}
+
+.accordion-open {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  padding: 16px 40px;
+  background-color: $background;
+  border-radius: 20px;
 }
 
 .item__name {
@@ -40,6 +53,7 @@
 }
 
 .item__arrow {
+  display: block;
   background-image: url('../assets/icons/accordion_arrow.svg');
   width: 16px;
   height: 16px;

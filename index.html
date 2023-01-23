@@ -37,7 +37,7 @@
           <img src="assets/icons/logo.svg" alt="" />
         </div>
 
-        <nav class="header__nav ">
+        <nav class="header__nav">
           <div class="nav__cross"></div>
           <ul>
             <li>
@@ -205,10 +205,12 @@
 
             <div class="prices-rates__accordion">
               <div class="accordion__item">
-                <p class="item__name">Basics</p>
-                <span class="item__arrow"></span>
+                <div class="accordion-open accordion-open--basic">
+                  <p class="item__name">Basics</p>
+                  <span class="item__arrow"></span>
+                </div>
 
-                <div class="tariff">
+                <div class="tariff tariff--basic">
                   <div class="tariff__name">
                     <p>Basics</p>
                     <span class="tariff__arrow"></span>
@@ -227,15 +229,19 @@
                     / per hour
                   </p>
 
-                  <button class="tariff__order">Order</button>
+                  <a href="#contacts">
+                    <button class="tariff__order">Order</button>
+                  </a>
                 </div>
               </div>
 
               <div class="accordion__item">
-                <p class="item__name">Standard</p>
-                <span class="item__arrow"></span>
+                <div class="accordion-open accordion-open--standard">
+                  <p class="item__name">Standard</p>
+                  <span class="item__arrow"></span>
+                </div>
 
-                <div class="tariff ">
+                <div class="tariff tariff--standard">
                   <div class="tariff__name">
                     <p>Standard</p>
                     <span class="tariff__arrow"></span>
@@ -254,15 +260,19 @@
                     / per hour
                   </p>
 
-                  <button class="tariff__order">Order</button>
+                  <a href="#contacts">
+                    <button class="tariff__order">Order</button>
+                  </a>
                 </div>
               </div>
 
               <div class="accordion__item">
-                <p class="item__name">Pro care</p>
-                <span class="item__arrow"></span>
+                <div class="accordion-open accordion-open--pro">
+                  <p class="item__name">Pro care</p>
+                  <span class="item__arrow"></span>
+                </div>
 
-                <div class="tariff">
+                <div class="tariff tariff--pro">
                   <div class="tariff__name">
                     <p>Pro care</p>
                     <span class="tariff__arrow"></span>
@@ -281,7 +291,9 @@
                     / per hour
                   </p>
 
-                  <button class="tariff__order-button">Order</button>
+                  <a href="#contacts">
+                    <button class="tariff__order">Order</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -304,7 +316,7 @@
       <section class="contacts">
         <a id="contacts"></a>
         <div class="contacts-container container">
-          <div class="contacts__women "></div>
+          <div class="contacts__women"></div>
 
           <h2 class="contacts__heading">Contact us</h2>
 
@@ -313,7 +325,7 @@
 
             <span class="select__arrow"></span>
 
-            <div class="select__dropdown ">
+            <div class="select__dropdown">
               <p class="select__item">Canandaigua, NY</p>
 
               <p class="select__item">New York City</p>

@@ -948,6 +948,7 @@ html {
   color: rgb(224, 103, 51);
   font: 2rem/26px "Inika", serif;
   margin: 20px 35px 15px 0;
+  transition: background-color 0.5s ease;
 }
 .service__button:active {
   background-color: rgb(224, 103, 51);
@@ -995,7 +996,7 @@ html {
   }
 }
 
-.tariff__order-button {
+.tariff__order {
   border: none;
   width: 86px;
   height: 25px;
@@ -1078,16 +1079,15 @@ html {
 
 .accordion__item {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(237, 242, 236);
   width: 250px;
   border-radius: 20px;
-  padding: 16px 40px;
   margin-top: 30px;
 }
 .accordion__item:first-child {
   margin-top: 0;
+}
+.accordion__item:hover {
+  cursor: pointer;
 }
 @media (max-width: 380px) {
   .accordion__item {
@@ -1095,6 +1095,15 @@ html {
     padding: 16px 35px;
     margin-top: 14px;
   }
+}
+
+.accordion-open {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  padding: 16px 40px;
+  background-color: rgb(237, 242, 236);
+  border-radius: 20px;
 }
 
 .item__name {
@@ -1109,6 +1118,7 @@ html {
 }
 
 .item__arrow {
+  display: block;
   background-image: url("../assets/icons/accordion_arrow.svg");
   width: 16px;
   height: 16px;

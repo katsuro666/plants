@@ -63,16 +63,38 @@ filterPlantingButton.addEventListener('click', function() {
   }
 })
 
-// let chooseBasic = document.querySelector('.accordion--basic')
-// let chooseStandard = document.querySelector('.accordion--standard')
-// let choosePro = document.querySelector('.accordion--pro')
+let chooseBasic = document.querySelector('.accordion-open--basic')
+let chooseStandard = document.querySelector('.accordion-open--standard')
+let choosePro = document.querySelector('.accordion-open--pro')
 
-// let showBasic = document.querySelector('.tariff--basic')
-// let showStandard = document.querySelector('.tariff--standard')
-// let showPro = document.querySelector('.tariff--pro')
+let showBasic = document.querySelector('.tariff--basic')
+let showStandard = document.querySelector('.tariff--standard')
+let showPro = document.querySelector('.tariff--pro')
 
-// chooseBasic.addEventListener('click', e => {
-//   console.log(e.target)
-//   event.stopPropagation()
-//   showBasic.classList.toggle('tariff--active')
-// }, true)
+let orderButton = document.querySelector('.tariff__order')
+
+orderButton.addEventListener('click', e => e.stopPropagation())
+
+let closeAccordion = document.querySelectorAll('.tariff__name')
+let tariffs = document.querySelectorAll('.tariff')
+
+function closeTariffs() {
+  tariffs.forEach(item => item.classList.remove('tariff--active'))
+}
+
+closeAccordion.forEach(item => {
+  item.addEventListener('click', closeTariffs)
+})
+
+chooseBasic.addEventListener('click', e => {
+  closeTariffs()
+  showBasic.classList.toggle('tariff--active')
+})
+chooseStandard.addEventListener('click', e => {
+  closeTariffs()
+  showStandard.classList.toggle('tariff--active')
+})
+choosePro.addEventListener('click', e => {
+  closeTariffs()
+  showPro.classList.toggle('tariff--active')
+})
