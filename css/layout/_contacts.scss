@@ -23,7 +23,6 @@
     width: 200px;
     height: 248px;
     background-size: contain;
-    // margin: 0 auto;  
     margin: 0 244px 0;
   }
 
@@ -35,7 +34,9 @@
 }
 
 .contacts__women--hide {
-  display: none;
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .contacts__heading {
@@ -59,7 +60,7 @@
   display: none;
   position: absolute;
   top: 245px;
-  right: 0;
+  right: 100px;
   flex-direction: column;
   width: 448px;
   padding: 17px 35px 32px;
@@ -69,7 +70,7 @@
 
   @include media-tablet {
     top: 263px;
-    right: 110px;
+    right: 160px;
   }
 
   @include media-mobile {
@@ -115,4 +116,5 @@
 
 .city-card--active {
   display: flex;
+  // position: absolute;
 }

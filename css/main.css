@@ -734,8 +734,10 @@ html {
   }
 }
 
-.contacts__women--hide {
-  display: none;
+@media (max-width: 380px) {
+  .contacts__women--hide {
+    display: none;
+  }
 }
 
 .contacts__heading {
@@ -761,7 +763,7 @@ html {
   display: none;
   position: absolute;
   top: 245px;
-  right: 0;
+  right: 100px;
   flex-direction: column;
   width: 448px;
   padding: 17px 35px 32px;
@@ -772,7 +774,7 @@ html {
 @media (max-width: 768px) {
   .city-card {
     top: 263px;
-    right: 110px;
+    right: 160px;
   }
 }
 @media (max-width: 380px) {
@@ -1092,8 +1094,6 @@ html {
 @media (max-width: 380px) {
   .accordion__item {
     width: 180px;
-    padding: 16px 35px;
-    margin-top: 14px;
   }
 }
 
@@ -1104,6 +1104,11 @@ html {
   padding: 16px 40px;
   background-color: rgb(237, 242, 236);
   border-radius: 20px;
+}
+@media (max-width: 380px) {
+  .accordion-open {
+    width: 180px;
+  }
 }
 
 .item__name {

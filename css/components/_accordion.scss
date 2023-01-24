@@ -10,12 +10,8 @@
 
 .accordion__item {
   position: relative;
-  // display: flex;
-  // justify-content: space-between;
-  // background-color: $background;
   width: 250px;
   border-radius: 20px;
-  // padding: 16px 40px;
   margin-top: 30px;
 
   &:first-child {
@@ -28,8 +24,8 @@
 
   @include media-mobile {
     width: 180px;
-    padding: 16px 35px;
-    margin-top: 14px;
+    // padding: 16px 35px;
+    // margin-top: 14px;
   }
 }
 
@@ -40,6 +36,12 @@
   padding: 16px 40px;
   background-color: $background;
   border-radius: 20px;
+
+  @include media-mobile {
+    width: 180px;
+    // padding: 16px 35px;
+    // margin-top: 14px;
+  }
 }
 
 .item__name {
@@ -79,6 +81,7 @@
 
 .tariff--active {
   display: block;
+
 }
 
 .tariff__name {

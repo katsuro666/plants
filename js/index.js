@@ -98,3 +98,54 @@ choosePro.addEventListener('click', e => {
   closeTariffs()
   showPro.classList.toggle('tariff--active')
 })
+
+let dropdownArrow = document.querySelector('.select__arrow')
+let openDropdown = document.querySelector('.contacts__select')
+let dropdownSelect = document.querySelector('.select__dropdown')
+
+openDropdown.addEventListener('click', e => {
+  openDropdown.classList.add('select--active')
+  dropdownSelect.classList.toggle('select__dropdown--active')
+  dropdownArrow.classList.toggle('select__arrow--active')
+})
+
+let currentCity = document.querySelector('.select__current')
+let dropdownCity = document.querySelectorAll('.select__item')
+
+let cityCard = document.querySelector('.city-card')
+let cityCardCity = document.querySelector('.city-card--city')
+let cityCardPhone = document.querySelector('.city-card--phone')
+let cityCardAddress = document.querySelector('.city-card--address')
+let contactsWoman = document.querySelector('.contacts__women')
+let callBtn = document.querySelector('.city-card__button')
+
+dropdownCity.forEach(item => item.addEventListener('click', e => {
+  e.stopPropagation()
+  openDropdown.classList.add('select--active')
+  dropdownSelect.classList.remove('select__dropdown--active')
+  dropdownArrow.classList.remove('select__arrow--active')
+  currentCity.textContent = e.target.textContent
+  cityCard.classList.add('city-card--active')
+  contactsWoman.classList.add('contacts__women--hide')
+
+  switch(e.target.textContent) {
+    case 'Yonkers, NY': cityCardCity.textContent = e.target.textContent
+                        cityCardPhone.textContent = '+1	914	678 0003'
+                        cityCardAddress.textContent = '511 Warburton Ave'
+                        break;
+    case 'Sherrill, NY': cityCardCity.textContent = e.target.textContent
+                         cityCardPhone.textContent = '+1	315	908 0004'
+                          cityCardAddress.textContent = '14 WEST Noyes BLVD'
+                          break;
+    case 'New York City': cityCardCity.textContent = e.target.textContent
+                          cityCardPhone.textContent = '+1	212	456 0002'
+                          cityCardAddress.textContent = '9 East 91st Street'
+                          break;
+    case 'Canandaigua, NY': cityCardCity.textContent = e.target.textContent
+                            cityCardPhone.textContent = '+1	585	393 0001'
+                            cityCardAddress.textContent = '151 Charlotte Street'
+                            break;
+  }
+}))
+
+callBtn.addEventListener('click', e => window.open(`tel:${cityCardPhone.textContent}`, '_self'))
